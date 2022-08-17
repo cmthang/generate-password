@@ -1,0 +1,38 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Generate Password
+        </title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body>
+        <div id="random-password">
+            <input type="text" id="password"/>
+            <button id="copy">
+                Copy
+            </button>
+            <div id="settings">
+                <label for="length">
+                    Length
+                </label>
+                <input type="number" id ="length" value="20" min="8" max="64"/>
+                
+                <label for="length">
+                    Include Numbers
+                </label>
+                <input type="checkbox" id ="numbers" checked/>
+
+                <label for="length">
+                    Include Symbols
+                </label>
+                <input type="checkbox" id ="symbols" checked/>
+            </div>
+            <button id="generate">Generate Password</button>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
